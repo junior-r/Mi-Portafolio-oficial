@@ -11,18 +11,20 @@
 </head>
 <body>
     {% include 'barra_navegacion.html' %}
-    <div class="content">
     {% block content %}
+    <div class="content">
         <section class="presentacion">
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laudantium pariatur molestias incidunt veritatis aliquam, quisquam nostrum iusto id corporis fugit obcaecati voluptates dolor alias esse fuga est harum delectus!</p>
+            <img class="foto_perfil_home" src="{% static 'imagenes/perfil-sBg.png' %}" alt="Foto de Perfil de Junior Ruíz">
+            <article class="content__presentacion">
+                <h2 class="title__presentacion">Acerca de mi</h2>
+                <p class="descripcion__presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum vitae animi magnam aliquid facilis est, odio vero minus voluptates impedit sed quaerat commodi voluptatibus reiciendis optio quidem. In, officiis?</p>    
+            </article>
         </section>
         <section class="conocimientos">
             <h2>Conocimientos</h2>
         </section>
-
-    {% endblock %}
     </div>
+    {% endblock %}
     {% include 'footer.html' %}
 </body>
 </html>
