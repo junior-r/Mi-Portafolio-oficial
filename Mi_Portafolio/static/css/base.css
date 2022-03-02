@@ -17,6 +17,7 @@
     --height-header: 4rem;
 
     --color-naranja: #ffa500;
+    --color-lavanda: rgb(145, 145, 235);
 }
 
 a {
@@ -72,11 +73,10 @@ body::-webkit-scrollbar-thumb{
 .header .nav__header .miBarra li {
     font-family: var(--font-family-titulos);
     padding: 1rem;
-    color: #7b6cce;
+    color: var(--color-lavanda);
     font-size: 1.7rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    transition: var(--transition);
 }
 
 .header .nav__header .miBarra li:hover {
@@ -115,6 +115,16 @@ body::-webkit-scrollbar-thumb{
     font-family: var(--font-family-parrafos);
 }
 
+.content_galeria {
+    min-height: calc(100vh - var(--height-header));
+    max-width: 1700px;
+    background-color: #2e2c2c;
+    margin-inline: auto;
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--font-family-parrafos);
+}
+
 .content .presentacion {
     display: flex;
     align-items: center;
@@ -133,12 +143,26 @@ body::-webkit-scrollbar-thumb{
 .content .presentacion .content__presentacion {
     padding-left: 1rem;
     border-left: 4px solid var(--color-naranja);
+    line-height: 1.5;
 }
 
 .content .presentacion .content__presentacion .title__presentacion {
     font-family: var(--font-family-titulos2);
     font-size: 3rem;
     margin-bottom: 0.5rem;
+}
+
+.content .presentacion .content__presentacion strong {
+    color: var(--color-lavanda);
+}
+
+.content .presentacion .content__presentacion .gustos__presentacion {
+    margin: 0.5rem 0 1rem 2rem;
+    list-style: circle;
+}
+
+.content .presentacion .content__presentacion .gustos__presentacion .item span {
+    color: var(--color-lavanda);
 }
 
 .footer {

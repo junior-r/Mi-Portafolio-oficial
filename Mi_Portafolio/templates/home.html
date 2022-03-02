@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} Mi Portafolio | Inicio {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Iconos/style.css' %}">
 </head>
 <body>
     {% include 'barra_navegacion.html' %}
@@ -17,7 +17,15 @@
             <img class="foto_perfil_home" src="{% static 'imagenes/perfil-sBg.png' %}" alt="Foto de Perfil de Junior Ruíz">
             <article class="content__presentacion">
                 <h2 class="title__presentacion">Acerca de mi</h2>
-                <p class="descripcion__presentacion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laborum vitae animi magnam aliquid facilis est, odio vero minus voluptates impedit sed quaerat commodi voluptatibus reiciendis optio quidem. In, officiis?</p>    
+                <p class="descripcion__presentacion">Hola, Mi nombre es <strong>Wilfred Junior Ruiz Navas</strong> tengo <strong>{{edad}}</strong> años, actualmente vivo en Venezuela, en este año 2022 me gradúo de Bachiller en Ciencias.</p>
+                <p class="descripcion__presentacion">Mis mayores gustos son:</p>
+                <ul class="gustos__presentacion">
+                    <li class="item item1"><span class="icon-embed2"></span> Programación</li>
+                    <li class="item item2"><span class="icon-power"></span> Marvel</li>
+                    <li class="item item3"><span class="icon-airplane"></span> Viajar</li>
+                    <li class="item item4"><span class="icon-headphones"></span> Música</li>
+                </ul> 
+                <p class="descripcion__presentacion">Tengo pensado estudiar Ingeniería Electrónica, para así completar mis conocimientos en <strong>Software</strong> con <strong>Hardware</strong>.</p>  
             </article>
         </section>
         <section class="conocimientos">
