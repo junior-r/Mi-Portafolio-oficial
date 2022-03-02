@@ -83,11 +83,13 @@ body::-webkit-scrollbar-thumb{
 
 .content {
     min-height: calc(100vh - var(--height-header));
-    background-color: #2e2c2c;
     max-width: 1700px;
+    background-color: #2e2c2c;
     margin: 1rem auto;
     color: #fff;
     font-family: var(--font-family-parrafos);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .footer {
