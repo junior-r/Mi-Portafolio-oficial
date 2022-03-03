@@ -84,38 +84,6 @@ body::-webkit-scrollbar-thumb{
     font-weight: 700;
 }
 
-.content_proyectos {
-    min-height: calc(100vh - var(--height-header));
-    max-width: 1700px;
-    background-color: #2e2c2c;
-    margin-inline: auto;
-    padding: 1rem;
-    color: #fff;
-    font-family: var(--font-family-parrafos);
-}
-
-.content_contactos {
-    min-height: calc(100vh - var(--height-header));
-    max-width: 1700px;
-    background-color: #2e2c2c;
-    margin-inline: auto;
-    padding: 1rem;
-    color: #fff;
-    font-family: var(--font-family-parrafos);
-}
-
-.content_galeria {
-    min-height: calc(100vh - var(--height-header));
-    max-width: 1700px;
-    background-color: #2e2c2c;
-    margin-inline: auto;
-    padding: 1rem;
-    color: #fff;
-    font-family: var(--font-family-parrafos);
-}
-
-
-
 .footer {
     background-color: #222;
     display: flex;

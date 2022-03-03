@@ -1,0 +1,9 @@
+.content_contactos {
+    min-height: calc(100vh - var(--height-header));
+    max-width: 1700px;
+    background-color: #2e2c2c;
+    margin-inline: auto;
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--font-family-parrafos);
+}
