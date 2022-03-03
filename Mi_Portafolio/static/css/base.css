@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Smooch+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,500;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Smooch+Sans:wght@300;400;700;800&Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700display=swap');
+
 *,
 *::before,
 *::after {
@@ -11,6 +12,7 @@
     --font-family-titulos: 'Smooch Sans', sans-serif;
     --font-family-titulos2: 'Open Sans', sans-serif;
     --font-family-parrafos: 'Roboto', sans-serif;
+    --font-family-buttons: 'Source Sans Pro', sans-serif;
 
     --transition: all ease-in .3s;
 
