@@ -1,3 +1,7 @@
+:root {
+    --borderR-img-Perfil: 10px;
+}
+
 .content {
     min-height: calc(100vh - var(--height-header));
     background-color: #d2d2d2;
@@ -19,11 +23,19 @@
     color: #000;
 }
 
-.content .presentacion .foto_perfil_home {
+.content .presentacion .content-foto__presentacion {
     height: 400px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px 1px #000;
+    width: 350px;
+    border-radius: var(--borderR-img-Perfil);
     justify-content: space-around;
+    transition: box-shadow ease 0.3s;
+    background-image: url(/static/imagenes/FotoPerfil.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content .presentacion .content-foto__presentacion:hover {
+    box-shadow: 2px 2px 10px 1px #000;
 }
 
 .content .presentacion .content__presentacion {
