@@ -54,7 +54,7 @@
 .content .conocimientos .content__conocimientos {
     list-style: none;
     display: grid;
-    height: 90%;
+    height: calc(100% - 8rem);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -110,4 +110,23 @@
     border-radius: 50%;
     margin: 0;
     padding: 0;
+}
+
+.content .conocimientos .descripcion__conocimientos {
+    text-align: center;
+}
+
+.content .conocimientos .descripcion__conocimientos b {
+    color: var(--color-lavanda);
+}
+
+.content .conocimientos .descripcion__conocimientos strong {
+    color: var(--color-naranja);
+}
+
+.icon-grin:before {
+    content: "\e9e9";
+    background-color: #ff0;
+    border-radius: 50%;
+    color: #000;
 }

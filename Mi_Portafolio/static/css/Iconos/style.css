@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8srrkx');
-  src:  url('fonts/icomoon.eot?8srrkx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8srrkx') format('truetype'),
-    url('fonts/icomoon.woff?8srrkx') format('woff'),
-    url('fonts/icomoon.svg?8srrkx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ohv3rq');
+  src:  url('fonts/icomoon.eot?ohv3rq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ohv3rq') format('truetype'),
+    url('fonts/icomoon.woff?ohv3rq') format('woff'),
+    url('fonts/icomoon.svg?ohv3rq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -57,24 +57,6 @@
 .icon-copyright:before {
   content: "\e900";
 }
-.icon-images:before {
-  content: "\e90e";
-}
-.icon-headphones:before {
-  content: "\e910";
-}
-.icon-files-empty:before {
-  content: "\e925";
-}
-.icon-address-book:before {
-  content: "\e944";
-}
-.icon-airplane:before {
-  content: "\e9af";
-}
-.icon-power:before {
-  content: "\e9b5";
-}
 .icon-home:before {
   content: "\e901";
 }
@@ -95,6 +77,9 @@
 }
 .icon-power:before {
   content: "\e9b5";
+}
+.icon-grin:before {
+  content: "\e9e9";
 }
 .icon-embed2:before {
   content: "\ea80";
