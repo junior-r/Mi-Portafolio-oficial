@@ -46,18 +46,38 @@
     max-width: 52%;
 }
 
-.container__projects .project .figure__project1 {
-    background-image: url(../imagenes/imagenes-proyectos/list-homeworks.jpg);
+.container__projects .project figure {
     background-size: cover;
     background-position: 0 0;
+    background-repeat: no-repeat;
     height: 200px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
+.container__projects .project .figure__project1 {
+    background-image: url(../imagenes/imagenes-proyectos/list-homeworks.jpg);
+}
+
+.container__projects .project .figure__project2 {
+    background-image: url(../imagenes/imagenes-proyectos/escritor-de-numeros.jpg);
+}
+
+.container__projects .project .figure__project3 {
+    background-image: url(../imagenes/imagenes-proyectos/mensages-whatsapp.jpg);
+}
+
+.container__projects .project .figure__project4 {
+    background-image: url(../imagenes/imagenes-proyectos/punto-de-venta.png);
+}
+
+.container__projects .project .figure__project5 {
+    background-image: url(../imagenes/imagenes-proyectos/Download-File.jpg);
+}
+
 .container__projects .project > div {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     row-gap: 0.5rem;
 }
 
@@ -65,11 +85,32 @@
     font-family: var(--font-family-titulos2);
 }
 
+.buttons__project {
+    display: flex;
+    justify-content: space-between;
+}
+
 .buttons__project > button {
     outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-lavanda);;
+    transition: outline, background-color ease 0.3s;
+}
+
+.buttons__project > button:hover {
+    outline: 1px solid #000;
+    background-color: #1877f2;
+    cursor: pointer;
 }
 
 .buttons__project > button > a {
     font-family: var(--font-family-buttons);
     font-size: 1rem;
+}
+
+.buttons__project .logo_languajes {
+    display: flex;
+    gap: 0.5rem;
 }
