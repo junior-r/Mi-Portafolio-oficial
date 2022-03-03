@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} Mi Portafolio | Inicio {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles-home.css' %}">
     <link rel="stylesheet" href="{% static 'css/Iconos/style.css' %}">
 </head>
 <body>
@@ -17,7 +18,7 @@
             <img class="foto_perfil_home" src="{% static 'imagenes/perfil-sBg.png' %}" alt="Foto de Perfil de Junior Ruíz">
             <article class="content__presentacion">
                 <h2 class="title__presentacion">Acerca de mi</h2>
-                <p class="descripcion__presentacion">Hola, Mi nombre es <strong>Wilfred Junior Ruiz Navas</strong> tengo <strong>{{edad}}</strong> años, actualmente vivo en Venezuela, en este año 2022 me gradúo de Bachiller en Ciencias.</p>
+                <p class="descripcion__presentacion">Hola, Mi nombre es <strong>Wilfred Junior Ruíz Navas</strong> tengo <strong>{{edad}}</strong> años, actualmente vivo en Venezuela, en este año 2022 me gradúo de Bachiller en Ciencias.</p>
                 <p class="descripcion__presentacion">Mis mayores gustos son:</p>
                 <ul class="gustos__presentacion">
                     <li class="item item1"><span class="icon-embed2"></span> Programación</li>
@@ -29,7 +30,41 @@
             </article>
         </section>
         <section class="conocimientos">
-            <h2>Conocimientos</h2>
+            <h2 class="title__conocimientos">Habilidades</h2>
+            <section class="content__conocimientos">
+                <div class="lang html">
+                    <h3>HTML <span class="icon-html5"></span> </h3>
+                    <div><p style="background: linear-gradient(to right, #e34c25, #f06529, #ebebeb); width: 90%; padding-left: 10%;">90%</p></div>
+                </div>
+                <div class="lang css">
+                    <h3>CSS <span class="icon-css3"></span></h3>
+                    <div><p style="background: linear-gradient(to right, #264de4, #2965f1, #ebebeb); width: 80%; padding-left: 20%;">80%</p></div>
+                </div>
+                <div class="lang py">
+                    <h3>Python <span class="icon-python"></span></h3>
+                    <div><p style="background: linear-gradient(to right, #4b8bbe 12%, #306998 27%, #ffe873 42%, #ffd43b 57%, #646464 72%); width: 75%; padding-left: 25%;">75%</p></div>
+                </div>
+                <div class="lang dj">
+                    <h3>Django <span class="icon-django"></span></h3>
+                    <div><p style="background: #2ba977; width: 60%; padding-left: 40%;">60%</p></div>
+                </div>
+                <div class="lang git">
+                    <h3>Git <span class="icon-git"></span></h3>
+                    <div><p style="background-color: #f05030; width: 70%; padding-left: 30%;">70%</p></div>
+                </div>
+                <div class="lang github">
+                    <h3>GitHub <span class="icon-github"></span></h3>
+                    <div><p style="background: linear-gradient(to right, #f05030, #fff) ; width: 70%; padding-left: 30%;">70%</p></div>
+                </div>
+                <div class="lang sql3">
+                    <h3>Sqlite3 <span class="icon-data"></span></h3>
+                    <div><p style="background: linear-gradient(to top, #0f84d2, #90d4f4); width: 50%; padding-left: calc(50% - 1rem); color: #fff;">50%</p></div>
+                </div>
+                <div class="lang mysql">
+                    <h3>MySQL <span class="icon-mysql"></span></h3>
+                    <div><p style="background: linear-gradient(to right, #00758f 40%, #f29111 60%); width: 50%; padding-left: calc(50% - 1rem); color: #fff;">50%</p></div>
+                </div>
+            </section>
         </section>
     </div>
     {% endblock %}

@@ -15,6 +15,7 @@
     --transition: all ease-in .3s;
 
     --height-header: 4rem;
+    --height-barra-load: 1.5rem;
 
     --color-naranja: #ffa500;
     --color-lavanda: rgb(145, 145, 235);
@@ -83,18 +84,6 @@ body::-webkit-scrollbar-thumb{
     font-weight: 700;
 }
 
-.content {
-    min-height: calc(100vh - var(--height-header));
-    max-width: 1700px;
-    background-color: #2e2c2c;
-    margin-inline: auto;
-    padding: 1rem;
-    color: #fff;
-    font-family: var(--font-family-parrafos);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
 .content_proyectos {
     min-height: calc(100vh - var(--height-header));
     max-width: 1700px;
@@ -125,45 +114,7 @@ body::-webkit-scrollbar-thumb{
     font-family: var(--font-family-parrafos);
 }
 
-.content .presentacion {
-    display: flex;
-    align-items: center;
-    gap: 8rem;
-    padding-inline: 1rem;
-    height: calc(100vh - var(--height-header));
-}
 
-.content .presentacion .foto_perfil_home {
-    height: 400px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 5px #000;
-    justify-content: space-around;
-}
-
-.content .presentacion .content__presentacion {
-    padding-left: 1rem;
-    border-left: 4px solid var(--color-naranja);
-    line-height: 1.5;
-}
-
-.content .presentacion .content__presentacion .title__presentacion {
-    font-family: var(--font-family-titulos2);
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.content .presentacion .content__presentacion strong {
-    color: var(--color-lavanda);
-}
-
-.content .presentacion .content__presentacion .gustos__presentacion {
-    margin: 0.5rem 0 1rem 2rem;
-    list-style: circle;
-}
-
-.content .presentacion .content__presentacion .gustos__presentacion .item span {
-    color: var(--color-lavanda);
-}
 
 .footer {
     background-color: #222;
@@ -171,6 +122,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     box-shadow: 0 -2px 2px 1px rgba(95, 95, 95, 0.2);
     position: relative;
+    bottom: 0;
 }
 
 .footer .derechos {
