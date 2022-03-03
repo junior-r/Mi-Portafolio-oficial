@@ -1,0 +1,113 @@
+.content {
+    min-height: calc(100vh - var(--height-header));
+    max-width: 1700px;
+    background-color: #2e2c2c;
+    margin-inline: auto;
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--font-family-parrafos);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content .presentacion {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding-inline: 1rem;
+    height: calc(100vh - var(--height-header));
+}
+
+.content .presentacion .foto_perfil_home {
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px #000;
+    justify-content: space-around;
+}
+
+.content .presentacion .content__presentacion {
+    padding-left: 1rem;
+    border-left: 4px solid var(--color-naranja);
+    line-height: 1.5;
+}
+
+.content .presentacion .content__presentacion .title__presentacion,
+.content .conocimientos .title__conocimientos {
+    font-family: var(--font-family-titulos2);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.content .presentacion .content__presentacion strong {
+    color: var(--color-lavanda);
+}
+
+.content .presentacion .content__presentacion .gustos__presentacion {
+    margin: 0.5rem 0 1rem 2rem;
+    list-style: circle;
+}
+
+.content .presentacion .content__presentacion .gustos__presentacion .item span {
+    color: var(--color-lavanda);
+}
+
+.content .conocimientos .content__conocimientos {
+    list-style: none;
+    display: grid;
+    height: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content .conocimientos .title__conocimientos {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.content .conocimientos .content__conocimientos .lang {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content .conocimientos .content__conocimientos .lang h3 {
+    font-family: var(--font-family-titulos2);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.content .conocimientos .content__conocimientos .lang div {
+    width: 100%;
+    height: var(--height-barra-load);
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.content .conocimientos .content__conocimientos .lang div p {
+    height: 100%;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    font-family: var(--font-family-parrafos);
+    font-weight: 700;
+    font-size: var(--height-barra-load);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-django:before {
+    content: "\e905";
+    color: #2ba977;
+}
+
+.icon-mysql:before {
+    content: "\e902";
+    color: #4479a1;
+    background-color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
