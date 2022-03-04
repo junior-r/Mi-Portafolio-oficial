@@ -51,6 +51,8 @@ body::-webkit-scrollbar-thumb{
     max-height: var(--height-header);
     box-shadow: 0 2px 2px 1px rgba(95, 95, 95, 0.2);
     position: relative;
+    max-width: 1903px;
+    margin-inline: auto;
 }
 
 .header .title__header {

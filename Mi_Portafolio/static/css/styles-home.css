@@ -69,6 +69,8 @@
     width: 100%;
     background-image: url(../imagenes/curva.png);
     background-repeat: no-repeat;
+    max-width: 1903px;
+    background-position: top;
 }
 
 .content .conocimientos .content__conocimientos {
