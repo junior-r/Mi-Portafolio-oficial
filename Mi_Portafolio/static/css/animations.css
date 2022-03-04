@@ -144,3 +144,7 @@
         width: 50%;
     }
 }
+
+.content .conocimientos .content__conocimientos .lang div p {
+    animation-direction: alternate;
+}
