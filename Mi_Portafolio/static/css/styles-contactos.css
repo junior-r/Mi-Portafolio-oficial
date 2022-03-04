@@ -20,17 +20,54 @@
     justify-items: center;
 }
 
-.red__img {
-    width: 100%;
+.red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.red > a {
+    display: block;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 1px solid;
+    box-shadow: 2px 2px 15px 2px var(--color-lavanda);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.red a:hover {
+    box-shadow: 2px 2px 15px 4px var(--color-lavanda);
+}
+
+.red__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .redes .red-wh > a > .red__img {
     background-image: url(../imagenes/imagenes-contactos/whatsapp.jpg);
+}
+
+.redes .red-ins > a > .red__img {
+    background-image: url(../imagenes/imagenes-contactos/instagram.jpg);
+}
+
+.redes .red-tw > a > .red__img {
+    background-image: url(../imagenes/imagenes-contactos/twitter.png);
+}
+
+.redes .red-fb > a > .red__img {
+    background-image: url(../imagenes/imagenes-contactos/facebook.jpg);
+}
+
+.redes .red-mail > a > .red__img {
+    background-image: url(../imagenes/imagenes-contactos/gmail.webp);
 }
 
 .red > button {
