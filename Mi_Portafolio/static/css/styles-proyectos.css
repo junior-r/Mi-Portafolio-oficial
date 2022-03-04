@@ -34,7 +34,7 @@
 .container__projects {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     justify-items: center;
     row-gap: 2rem;
 }
@@ -44,6 +44,7 @@
     grid-template-columns: 350px 1fr;
     column-gap: 1rem;
     max-width: 52%;
+    width: 100%;
 }
 
 .container__projects .project figure {
@@ -75,6 +76,10 @@
     background-image: url(../imagenes/imagenes-proyectos/Download-File.jpg);
 }
 
+.container__projects .project .figure__project6 {
+    background-image: url(../imagenes/imagenes-proyectos/blog-personal.jpg);
+}
+
 .container__projects .project > div {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
@@ -83,6 +88,15 @@
 
 .container__projects .project > div > h2 {
     font-family: var(--font-family-titulos2);
+}
+
+.container__projects .project > div > p {
+    font-family: var(--font-family-parrafos);
+    overflow: hidden;
+}
+
+.container__projects .project > div > p > strong {
+    color: var(--color-lavanda);
 }
 
 .buttons__project {
