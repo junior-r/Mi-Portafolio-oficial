@@ -13,3 +13,42 @@
     --color-lavanda: rgb(145, 145, 235);
 }
 
+.content_contactos .redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.red__img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.redes .red-wh > a > .red__img {
+    background-image: url(../imagenes/imagenes-contactos/whatsapp.jpg);
+}
+
+.red > button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-lavanda);;
+    transition: outline, background-color ease 0.3s;
+}
+
+.red > button:hover {
+    outline: 1px solid #000;
+    background-color: #1877f2;
+    cursor: pointer;
+}
+
+.red > button > a {
+    font-family: var(--font-family-buttons);
+    font-size: 1rem;
+}
