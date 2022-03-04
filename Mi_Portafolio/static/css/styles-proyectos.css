@@ -34,8 +34,7 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     height: 200px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .container__projects .project .figure__project1 {
@@ -109,4 +108,22 @@
 .buttons__project .logo_languajes {
     display: flex;
     gap: 0.5rem;
+}
+
+@media screen and (max-width: 1246px) {
+    .container__projects .project {
+        grid-template-columns: 1fr;
+    }
+
+    .container__projects .project figure {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .buttons__project > button {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .buttons__project > button > a {
+        font-size: 0.7rem;
+    }
 }

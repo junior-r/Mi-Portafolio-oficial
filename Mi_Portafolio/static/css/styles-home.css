@@ -157,3 +157,28 @@
     border-radius: 50%;
     color: #000;
 }
+
+@media screen and (max-width: 1246px) {
+    .content .conocimientos .content__conocimientos {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .content .conocimientos .content__conocimientos .lang h3 {
+        font-size: 1rem;
+    }
+
+    .content .conocimientos .content__conocimientos .lang {
+        width: 100%;
+        max-width: 60%;
+        margin-inline: auto;
+    }
+
+    .content .conocimientos .content__conocimientos .lang div p {
+        font-size: 1.2rem;
+    }
+
+    .content .conocimientos .descripcion__conocimientos {
+        padding: 1rem 0;
+    }
+}

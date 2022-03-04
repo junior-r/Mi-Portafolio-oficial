@@ -115,11 +115,35 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     box-shadow: 0 -2px 2px 1px rgba(95, 95, 95, 0.2);
     position: relative;
-    height: var(--height-header);
 }
 
 .footer .derechos {
     font-family: var(--font-family-parrafos);
     color: #75cbf3;
     padding: 1rem 0;
+}
+
+@media screen and (max-width: 1246px) {
+    body {
+        font-size: 8px;
+    }
+
+    .header .title__header {
+        font-size: 1.5rem;
+    }
+
+    .header .title__header:hover {
+        font-size: 2rem;
+    }
+
+    .header .nav__header .miBarra li {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .title-content__proyectos,
+    .title-content__contactos,
+    .title__galeria {
+        font-size: 2rem;
+    }
 }
