@@ -100,7 +100,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .title-content__proyectos,
-.title-content__contactos {
+.title-content__contactos,
+.title__galeria {
     font-family: var(--font-family-titulos2);
     font-size: 3rem;
     margin-bottom: 0.5rem;

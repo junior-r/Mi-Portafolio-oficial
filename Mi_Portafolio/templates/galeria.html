@@ -1,7 +1,54 @@
 {% extends 'home.html' %}
+{% load static %}
 {% block title %} Mi Portafolio | Galeria {% endblock %}
 {% block content %}
     <div class="content_galeria">
-        <h1>Galeria</h1>
+        <h1 class="title__galeria">Galeria</h1>
+        <main class="main">
+            <section class="gallery">
+
+                <figure class="gallery__picture gallery__picture--g1">
+                    <img src="{% static 'imagenes/Imagenes-galeria/1.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g2">
+                    <img src="{% static 'imagenes/Imagenes-galeria/2.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g3">
+                    <img src="{% static 'imagenes/Imagenes-galeria/3.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g4">
+                    <img src="{% static 'imagenes/Imagenes-galeria/4.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g5">
+                    <img src="{% static 'imagenes/Imagenes-galeria/5.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g6">
+                    <img src="{% static 'imagenes/Imagenes-galeria/6.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g7">
+                    <img src="{% static 'imagenes/Imagenes-galeria/7.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g8">
+                    <img src="{% static 'imagenes/Imagenes-galeria/8.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g9">
+                    <img src="{% static 'imagenes/Imagenes-galeria/9.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g10">
+                    <img src="{% static 'imagenes/Imagenes-galeria/10.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g11">
+                    <img src="{% static 'imagenes/Imagenes-galeria/11.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g12">
+                    <img src="{% static 'imagenes/Imagenes-galeria/12.jpg' %}" alt="" class="gallery__img">
+                </figure>
+                <figure class="gallery__picture gallery__picture--g13">
+                    <img src="{% static 'imagenes/Imagenes-galeria/13.jpg' %}" alt="" class="gallery__img">
+                </figure>
+
+            </section>
+        </main>
+        
     </div>
 {% endblock %}
