@@ -88,6 +88,26 @@ body::-webkit-scrollbar-thumb{
     font-weight: 700;
 }
 
+.content_proyectos,
+.content_contactos {
+    min-height: calc(100vh - var(--height-header));
+    max-width: 1700px;
+    background-color: #2e2c2c;
+    margin-inline: auto;
+    padding: 1rem;
+    color: #fff;
+    font-family: var(--font-family-parrafos);
+}
+
+.title-content__proyectos,
+.title-content__contactos {
+    font-family: var(--font-family-titulos2);
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .footer {
     background-color: #222;
     display: flex;

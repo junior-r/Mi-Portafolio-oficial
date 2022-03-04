@@ -13,24 +13,6 @@
     --color-lavanda: rgb(145, 145, 235);
 }
 
-.content_proyectos {
-    min-height: calc(100vh - var(--height-header));
-    max-width: 1700px;
-    background-color: #2e2c2c;
-    margin-inline: auto;
-    padding: 1rem;
-    color: #fff;
-    font-family: var(--font-family-parrafos);
-}
-
-.title__content {
-    font-family: var(--font-family-titulos2);
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
 .container__projects {
     display: grid;
     grid-template-columns: 1fr;
