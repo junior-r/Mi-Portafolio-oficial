@@ -8,7 +8,7 @@ now = datetime.datetime.now()
 edad = now.year - 2006
 
 def home(request):
-    return render(request, 'home.html', {'now': now, 'edad': edad})
+    return render(request, 'index.html', {'now': now, 'edad': edad})
 
 def proyectos(request):
     return render(request, 'proyectos.html', {'now': now})
