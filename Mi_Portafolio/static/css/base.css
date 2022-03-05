@@ -50,7 +50,8 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-around;
     max-height: var(--height-header);
     box-shadow: 0 2px 2px 1px rgba(95, 95, 95, 0.2);
-    position: relative;
+    position: sticky;
+    top: 0;
     max-width: 1903px;
     margin-inline: auto;
 }
@@ -61,10 +62,17 @@ body::-webkit-scrollbar-thumb{
     font-family: var(--font-family-titulos2);
     color: #fff;
     transition: var(--transition);
+    width: 100%;
+    text-align: center;
 }
 
 .header .title__header:hover {
     font-size: 2.3rem;
+}
+
+.nav__label,
+.nav__input {
+    display: none;
 }
 
 .header .nav__header .miBarra {
@@ -145,5 +153,40 @@ body::-webkit-scrollbar-thumb{
     .title-content__contactos,
     .title__galeria {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav__label {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .miBarra {
+        position: fixed;
+        top: 2rem;
+        bottom: 0;
+        right: -100%;
+        background-color: #222;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .nav__input:checked + .miBarra {
+        right: 0;
+    }
+
+    .header .title__header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header .title__header:hover {
+        font-size: 1.5rem;
     }
 }

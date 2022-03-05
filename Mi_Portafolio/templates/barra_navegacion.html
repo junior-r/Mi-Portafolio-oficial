@@ -1,9 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <body>
     <header class="header">
         <h1 class="title__header"><a href="{% url 'home' %}">Junior Ruíz</a></h1>
         <nav class="nav__header">
+            <label for="menu" class="nav__label">
+                <img src="{% static 'imagenes/icon-menu.svg' %}" class="icon-menu" alt="icono menu" />
+            </label>
+            <input type="checkbox" name="menu" id="menu" class="nav__input" />
+
             <ul class="miBarra">
                 <li><a href="{% url 'home' %}"><span class="icon-home"></span> Inicio</a></li>
                 <li><a href="{% url 'proyectos' %}"><span class="icon-files-empty"></span> Proyectos</a></li>
