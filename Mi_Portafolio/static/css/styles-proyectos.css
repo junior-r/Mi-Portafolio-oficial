@@ -111,6 +111,14 @@
 }
 
 @media screen and (max-width: 1246px) {
+    .container__projects {
+        font-size: 0.8rem;
+    }
+
+    .container__projects .project {
+        max-width: 80%;
+    }
+
     .container__projects .project {
         grid-template-columns: 1fr;
     }

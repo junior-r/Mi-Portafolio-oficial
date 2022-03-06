@@ -182,3 +182,14 @@
         padding: 1rem 0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .content .presentacion {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .content .presentacion .content__presentacion {
+        font-size: 1rem;
+    }
+}
