@@ -1,20 +1,42 @@
-from django.http import HttpResponse
-from django.template import Template, Context
-from django.template.loader import get_template
 from django.shortcuts import render
 import datetime
+from Projects.models import Project
 
 now = datetime.datetime.now()
 edad = now.year - 2006
 
+
 def home(request):
-    return render(request, 'index.html', {'now': now, 'edad': edad})
+    data = {
+        'now': now,
+        'edad': edad
+    }
+
+    return render(request, 'index.html', data)
+
 
 def proyectos(request):
-    return render(request, 'proyectos.html', {'now': now})
+    projects = Project.objects.all()
+
+    data = {
+        'now': now,
+        'projects': projects
+    }
+
+    return render(request, 'proyectos.html', data)
+
 
 def contacto(request):
-    return render(request, 'contactos.html', {'now': now})
+    data = {
+        'now': now
+    }
+
+    return render(request, 'contactos.html', data)
+
 
 def galeria(request):
-    return render(request, 'galeria.html', {'now': now})
+    data = {
+        'now': now
+    }
+
+    return render(request, 'galeria.html', data)

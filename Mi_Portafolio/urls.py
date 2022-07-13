@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Mi_Portafolio.views import home, contacto, proyectos, galeria
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name = 'home'),
-    path('proyectos/', proyectos, name = 'proyectos'),
-    path('contactos/', contacto, name = 'contactos'),
-    path('galeria/', galeria, name = 'galeria'),
-]
+    path('', home, name='home'),
+    path('proyectos/', proyectos, name='proyectos'),
+    path('contactos/', contacto, name='contactos'),
+    path('galeria/', galeria, name='galeria'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
